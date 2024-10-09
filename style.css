@@ -155,16 +155,11 @@ body{
 
 .feature-card {
   border-radius: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.feature-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.538);
-}
 
 .feature-image {
   height: 200px;
@@ -206,10 +201,6 @@ body{
 .card-text {
   font-size: 1rem;
   color: #555;
-}
-
-.card:hover {
-    transform: translateY(-5px);
 }
 
 .scroll-1::-webkit-scrollbar {
@@ -259,9 +250,10 @@ body{
   overflow: hidden;
 }
 
-.card:hover {
+#product .card:hover {
   transform: translateY(-5px);
 }
+
 
 #product .card-img-top {
   width: 100%;
@@ -271,6 +263,7 @@ body{
 
 
 .products-title {
+  padding-top: 5px;
   font-size: 2.5rem;
   font-weight: bold;
   color: #333;
@@ -465,7 +458,7 @@ hr {
 }
 
 .review-card {
-  display: flex;
+  display: block;
   flex-direction: column;
   margin-bottom: 20px;
 }
